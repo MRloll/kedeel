@@ -125,7 +125,6 @@
     $('.carousel .links li').on('click', function (e) {
         var fadeIndex = $(this).attr('data-slide-to');
         var carousel = $(this).parents(".carousel");
-        console.log($(this).parents(".carousel"))
 
         //fade in the clicked item & fade out the current one
         if (!$(this).hasClass('active') && carousel.find(fadeIndex).is(":hidden")) {
@@ -146,13 +145,15 @@
         slidingLine.width($(activeTab).width());
         slidingLine.css("left", pos + parseInt($(activeTab).css("margin-left")) + "px");
     });
-
-    let slidingLine = $(".carousel").find('.sliding-line'),
-        activeTab = $(".carousel").find('li.active'),
-        pos = $(activeTab).position().left;
+        
+    $(".services .carousel").each(function() {
+        let slidingLine = $(this).find('.sliding-line'),
+            activeTab = $(this).find('li.active'),
+            pos = $(activeTab).position().left;
 
         slidingLine.width($(activeTab).width());
         slidingLine.css("left", pos + parseInt($(activeTab).css("margin-left")) + "px");
+    });
 
 
 

@@ -549,11 +549,11 @@ nav{
     margin: auto;
     width: 88%;
     color: var(--primary);
+    margin-bottom: 20px;
 }
 
 .services .carousel .links ul {
     width: 100%;
-    flex-wrap: wrap;
 }
 
 .services .carousel .links li {
@@ -561,17 +561,15 @@ nav{
     list-style: none;
     cursor: pointer;
     transition: all 1s ease;
-    border-bottom: 3px solid transparent;
     flex-grow: 1;
     font-size: 10px;
     flex-basis: 50%;
     margin: 0;
-    margin-bottom: 30px;
     font-weight: bold;
+    font-size: 13px;
 }   
 
 .services .carousel .links li.active {
-    border-color: var(--green);
     color: var(--green);
 }
 

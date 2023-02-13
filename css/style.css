@@ -542,6 +542,10 @@ nav{
     border-color: var(--green) !important;
 }
 
+/* our clints */
+.our-clients{
+    max-width: 800px;
+}
 /* start services   */
 .services .carousel .links {
     box-shadow: none;

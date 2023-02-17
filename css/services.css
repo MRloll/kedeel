@@ -144,6 +144,10 @@
 }
 
 /* start services   */
+.services {
+  background: url("../img/Design\ 4.svg") no-repeat;
+  background-size: cover;
+}
 .row.mt-5 {
   margin-bottom: 130px;
 }

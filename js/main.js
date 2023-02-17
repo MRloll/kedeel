@@ -99,22 +99,22 @@
 
 
     // Vendor carousel
-    $('.vendor-carousel').owlCarousel({
-        loop: true,
-        margin: 45,
-        dots: false,
-        loop: true,
-        autoplay: false,
-        smartSpeed: 1000,
-        responsive: {
-            0:{
-                items:2
-            },
-            576:{
-                items:4
-            }
-        }
-    });
+    // $('.vendor-carousel').owlCarousel({
+    //     loop: true,
+    //     margin: 45,
+    //     dots: false,
+    //     loop: true,
+    //     autoplay: false,
+    //     smartSpeed: 1000,
+    //     responsive: {
+    //         0:{
+    //             items:2
+    //         },
+    //         576:{
+    //             items:4
+    //         }
+    //     }
+    // });
         //============================================
     //  sliding through the carousel
     //============================================

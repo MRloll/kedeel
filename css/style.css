@@ -283,6 +283,12 @@ nav .collapse  a.btn.btn-primary.py-2.px-4.ms-3:hover{
     height: 3rem;
 }
 
+/*** about ***/
+#about {
+    background: url("../img/Design\ 3.svg");
+    background-size: contain;
+
+}
 
 /*** Section Title ***/
 .section-title::before {
@@ -553,6 +559,12 @@ nav .collapse  a.btn.btn-primary.py-2.px-4.ms-3:hover{
 }
 
 /* our clints */
-.our-clients{
-    max-width: 800px;
+.our-clients img{
+    width: 200px;
+}
+
+/* contact-us  */
+.contact-us {
+    background: url("../img/Design\ 4.svg");
+    background-size: cover;
 }

@@ -160,6 +160,16 @@ nav{
     outline: none;
     transition: .5s;
 }
+nav .collapse  a.btn.btn-primary.py-2.px-4.ms-3{
+    background-color: var(--primary) !important;
+}
+
+nav .collapse  a.btn.btn-primary.py-2.px-4.ms-3:hover{
+    color: var(--primary) !important;
+    box-shadow: inset 0 0 0 0 var(--primary);
+    border-color: var(--primary) !important;
+    background-color: #fff !important;
+}
 
 .sticky-top.navbar-dark .navbar-nav .nav-link {
     padding: 20px 0;
@@ -546,139 +556,3 @@ nav{
 .our-clients{
     max-width: 800px;
 }
-/* start services   */
-.services .carousel .links {
-    box-shadow: none;
-    position: relative;
-    margin: auto;
-    width: 88%;
-    color: var(--primary);
-    margin-bottom: 20px;
-}
-
-.services .carousel .links ul {
-    width: 100%;
-}
-
-.services .carousel .links li {
-    display: inline-block;
-    list-style: none;
-    cursor: pointer;
-    transition: all 1s ease;
-    flex-grow: 1;
-    font-size: 10px;
-    flex-basis: 50%;
-    margin: 0;
-    font-weight: bold;
-    font-size: 13px;
-}   
-
-.services .carousel .links li.active {
-    color: var(--green);
-}
-
-.services .carousel .links li img {
-    width: 41px;
-    height: 43px;
-}
-
-
-.services .carousel .links .sliding-line {
-    position: absolute;
-    bottom: 0;
-    height: 3px;
-    box-shadow: 0 3px #42B39A;
-    transition: all .3s ease-in-out;
-}
-
-.services .carousel .fade-carousel {
-    position: relative;
-    color: var(--primary);
-}
-
-.services .carousel .fade-carousel .fade-item:not(.instructors) p {
-    font-size: 17px;
-}
-
-.services .carousel .fade-carousel .fade-item:not(.instructors) img {
-    width: 80%;
-}
-
-.services .carousel .fade-item:not(.active) {
-    display: none;
-}
-
-.services .carousel .fade-item.instructors>.row>div {
-    margin-bottom: 100px;
-}
-
-.services .carousel .fade-item .instructor .desc {
-    position: absolute;
-    bottom: -61px;
-    background: white;
-    left: -10px;
-    padding: 12px;
-    font-size: 13px;
-    border-radius: 6px;
-    box-shadow: 0px 7px 17px -12px rgba(17, 36, 89, 0.4);
-}
-
-.services .carousel .fade-item .instructor .desc p {
-    margin-bottom: 7px;
-}
-
-.services .carousel .fade-item .instructor .desc h5 {
-    margin-bottom: 13px;
-    font-size: 15px;
-}
-
-.services .carousel .fade-item .instructor .desc img {
-    width: 19px;
-}
-
-@media (max-width: 576px) {
-
-    .services .carousel .fade-item .instructor .desc p,
-    .services .carousel .fade-item .instructor .desc h5 {
-        margin-bottom: 0px;
-    }
-
-
-}
-
-@media (min-width: 768px) {
-    .services .carousel .links {
-        box-shadow: 0px 2px 0px 0px #E1E1E1;
-    }
-
-    .services .carousel .links ul {
-        flex-wrap: nowrap;
-    }
-
-    .services .carousel .links li {
-        flex-basis: unset;
-        margin-bottom: 0;
-        border-color: transparent;
-        font-size: 12px;
-    }
-
-    .services .carousel .links li {
-        font-size: 15px;
-    }
-
-    .services .carousel .links li.active {
-        border-color: transparent;
-    }
-
-    .services .carousel .links li img {
-        width: 55px;
-        height: 61px;
-    }
-
-    .services .carousel .fade-carousel .fade-item:not(.instructors) img {
-        width: 100%;
-    }
-
-
-}
-

@@ -104,7 +104,7 @@
         margin: 45,
         dots: false,
         loop: true,
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1000,
         responsive: {
             0:{
@@ -121,11 +121,11 @@
 
     $('.carousel .links li').on('click', function (e) {
         var fadeIndex = $(this).attr('data-slide-to');
-        var carousel = $(this).parents(".carousel");
+        var carousel = $(this).parents(".row");
 
         //fade in the clicked item & fade out the current one
         if (!$(this).hasClass('active') && carousel.find(fadeIndex).is(":hidden")) {
-            $(this).parents(".carousel").find('.fade-item.active').fadeOut(function () {
+            carousel.find('.fade-item.active').fadeOut(function () {
                 $(this).removeClass("active")
                 carousel.find(fadeIndex).fadeIn().addClass("active").siblings().removeClass("active").hide();
             }, 0)

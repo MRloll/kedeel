@@ -306,10 +306,10 @@ h5.icon-box-heading i {
 }
 
 .services .row .img-list img {
-  display: none;
+  display: none !important;
   width: 100%;
 }
 
 .services .row .img-list img.active {
-  display: block;
+  display: block !important;
 }

@@ -151,6 +151,10 @@
 .row.mt-5 {
   margin-bottom: 130px;
 }
+
+.services .section-title {
+  max-width: 100% !important;
+}
 .services .carousel .links {
   box-shadow: none;
   position: relative;

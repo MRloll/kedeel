@@ -535,7 +535,7 @@ nav .collapse  a.btn.btn-primary.py-2.px-4.ms-3:hover{
 
 .fa-whatsapp {
     position: fixed;
-    bottom: 50px;
+    bottom: 45px;
     left: 35px;
     background-color: var(--green);
     padding: 10px;

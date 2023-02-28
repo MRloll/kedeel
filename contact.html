@@ -335,12 +335,13 @@
               animation-name: slideInUp;
             "
           >
-            <form>
+            <form id="contact-form">
               <div class="row g-3">
                 <div class="col-md-6">
                   <input
                     type="text"
                     class="form-control border-0 bg-light px-4"
+                    name="from_name"
                     placeholder="Your Name"
                     style="height: 55px"
                   />
@@ -348,6 +349,7 @@
                 <div class="col-md-6">
                   <input
                     type="email"
+                    name="from_email"
                     class="form-control border-0 bg-light px-4"
                     placeholder="Your Email"
                     style="height: 55px"
@@ -356,6 +358,7 @@
                 <div class="col-12">
                   <input
                     type="text"
+                    name="subject"
                     class="form-control border-0 bg-light px-4"
                     placeholder="Subject"
                     style="height: 55px"
@@ -365,6 +368,7 @@
                   <textarea
                     class="form-control border-0 bg-light px-4 py-3"
                     rows="4"
+                    name="message"
                     placeholder="Message"
                   ></textarea>
                 </div>
@@ -570,5 +574,30 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("YOUR_USER_ID");
+      })();
+
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+          from_name: this.from_name.value,
+          from_email: this.from_email.value,
+          subject: this.subject.value,
+          message_html: this.message.value
+        })
+          .then(function(response) {
+            alert("Email sent successfully")
+            location.reload()
+          }, function(error) {
+            alert("Please try again")
+          });
+      });
+    </script> -->
+
   </body>
 </html>
